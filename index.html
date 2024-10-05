@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MOMIXTV</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .jwplayer {
+      position: absolute !important;
+    }
+
+    .jwplayer.jw-flag-aspect-mode {
+      min-height: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="jwplayerDiv"></div>
+  <script type="text/javascript">
+    jwplayer("jwplayerDiv").setup({
+      file: "https://prod-sports-eng-cf.jiocinema.com//hls/live/2100306/hd_akamai_merged_avc_eng_cricket_m1_051024/master.m3u8", // Replace with your M3U8 URL
+      position: 'bottom',
+      autostart: true,
+      stretching: "fill",
+      width: "100%",
+      type: "hls" // Set type to HLS for M3U8
+    });
+  </script>
+</body>
+
+</html>
